@@ -7,7 +7,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from './ui/select';
-import { X, Globe } from 'lucide-react';
+import { X } from 'lucide-react';
 import type { FilterState } from '../types';
 
 interface FilterBarProps {
@@ -35,7 +35,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({ filters, setFilters }) => 
                 <div className="md:hidden space-y-2">
                     {/* Row 1: Title */}
                     <div className="flex items-center justify-center gap-2 text-white">
-                        <Globe className="w-4 h-4 text-blue-400" />
+                        <img src="/globe.svg" alt="Globe" className="w-4 h-4" />
                         <h1 className="text-base font-semibold tracking-tight">World Atlas Explorer</h1>
                     </div>
                     {/* Row 2: Search and Filter */}
@@ -99,7 +99,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({ filters, setFilters }) => 
 
                     {/* Center: App Name */}
                     <div className="flex items-center justify-center gap-2 text-white">
-                        <Globe className="w-5 h-5 text-blue-400" />
+                        <img src="/globe.svg" alt="Globe" className="w-5 h-5" />
                         <h1 className="text-lg font-semibold tracking-tight whitespace-nowrap">World Atlas Explorer</h1>
                     </div>
 
